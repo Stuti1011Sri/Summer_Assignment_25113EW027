@@ -1,0 +1,27 @@
+import java.util.*;
+public class Fibonacci_term{
+       
+
+   public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      int n;
+      System.out.println("Enter the term to find:");
+      n = sc.nextInt();
+      System.out.println("nth term is: " +fibonacci(n));
+      
+   }
+   public static int fibonacci(int n){
+        
+       if(n<= 1) 
+         return 0;
+       else if(n == 2) 
+         return 1;
+       else
+         return (fibonacci(n-1)+ fibonacci(n-2));
+ 
+    }   
+
+}
+
+
+
